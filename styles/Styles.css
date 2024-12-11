@@ -1,0 +1,300 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0047ab;
+    color: white;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-caption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffcc00;
+}
+
+/*  Content  */
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(27, 111, 221);
+    color: white;
+    flex-wrap: wrap;
+}
+
+.content img {
+    height: 600px;
+    width: auto;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.content p {
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* Carousel  */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 1.0s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Heading  */
+h2 {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Highlight */
+.highlight-section {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlight-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*  Responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .navbar-links a {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+
+    .highlight-section {
+        padding: 15px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-caption {
+        font-size: 18px;
+    }
+
+    .navbar-links a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .highlight-section h1 {
+        font-size: 28px;
+    }
+
+    .highlight-section p {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+/* Form  */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Label Styles */
+form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+form input[type="text"], 
+form input[type="email"], 
+form input[type="tel"], 
+form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+form input[type="text"]:focus, 
+form input[type="email"]:focus, 
+form input[type="tel"]:focus, 
+form textarea:focus {
+    border-color: #0047ab;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    background-color: #0047ab;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003380;
+}
+
+form .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+form .success-message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 15px;
+}

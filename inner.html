@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fan site for [Your Favorite Topic]">
+    <title>Inner Page - [Caption Canada]</title>
+    <link rel="stylesheet" href="styles/Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Your Name/Student Number -->
+    <!-- Created by: Sangeeta / Student Number: 123456789 -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="home.html"><img src="images/cd.png" alt="Logo"></a>
+            <span class="navbar-caption">Canada Caption Site</span>
+        </div>
+        <div class="navbar-links">
+            <a href="home.html">Home</a>
+            <a href="inner.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Title Section with Image -->
+        <section class="title-section">
+            <h1>Discover the Beauty of Canada</h1>
+            <img src="images/banff-national-park-alberta.jpg" alt="Banff National Park" class="title-image">
+        </section>
+
+        <!-- Text and Video Section -->
+        <section class="text-video-section">
+            <h2>Exploring Banff National Park</h2>
+            <p>Banff National Park is one of the most iconic destinations in Canada, known for its stunning turquoise
+                lakes,
+                towering mountains, and incredible wildlife. It’s a haven for nature lovers and adventure seekers alike.
+            </p>
+            <p>Visitors can enjoy activities such as hiking, skiing, and taking scenic drives through the picturesque
+                landscape.
+                The park is also home to a variety of wildlife, including bears, elk, and moose.</p>
+            <h3>Watch the Video for a Virtual Tour</h3>
+            <div class="video-container">
+                <iframe width="1271" height="715" src="https://www.youtube.com/embed/vM54IDn4RCI"
+                    title="Wonders of Canada | The Most Amazing Places in Canada | Travel Video 4K" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Share Your Thoughts</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <fieldset>
+                    <legend>What is your favorite activity in Canada?</legend>
+                    <label><input type="checkbox" name="activities" value="Hiking"> Hiking</label>
+                    <label><input type="checkbox" name="activities" value="Skiing"> Skiing</label>
+                    <label><input type="checkbox" name="activities" value="Camping"> Camping</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferred Destination</legend>
+                    <label><input type="radio" name="destination" value="Banff"> Banff</label>
+                    <label><input type="radio" name="destination" value="Vancouver"> Vancouver</label>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ramandeep | Email: <a href="mailto:youremail@example.com">ramandeepkaur@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
